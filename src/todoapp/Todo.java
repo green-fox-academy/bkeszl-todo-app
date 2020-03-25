@@ -19,7 +19,18 @@ public class Todo {
     tasks = openTasks.openTasks();
 
     if (args[0].equals("-l")) {
+      if (tasks.size() == 0 ){
+        System.out.println("No todos today!");
+        return;
+      }
       new ListTasks(tasks);
+      return;
+    }
+
+    if (args[0].equals("-a")) {
+      String taskToAdd = args[1];
+      new addTask(taskToAdd);
+      return;
     }
 
 

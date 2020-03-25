@@ -10,7 +10,6 @@ public class OpenTasks {
   public List<String> openTasks() {
     try {
       Path taskListPath = Paths.get("todoapp/taskList.txt");
-      System.out.println(taskListPath.toAbsolutePath());
       return Files.readAllLines(taskListPath);
     } catch (IOException e) {
       e.printStackTrace();
