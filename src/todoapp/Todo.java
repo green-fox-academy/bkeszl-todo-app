@@ -33,6 +33,11 @@ public class Todo {
       return;
     }
 
+    if (args[0].equals("-c")) {
+      String taskToCheck = args[1];
+      new checkTask(taskToCheck);
+      return;
+    }
 
   }
 }
