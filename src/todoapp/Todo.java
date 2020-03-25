@@ -28,7 +28,7 @@ public class Todo {
     }
 
     if (args[0].equals("-a")) {
-      String taskToAdd = args[1];
+      String taskToAdd = args[1] + " 0" + System.lineSeparator() ;
       new addTask(taskToAdd);
       return;
     }
